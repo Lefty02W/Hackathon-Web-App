@@ -6,7 +6,11 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
+
 import VueApexCharts from 'vue-apexcharts'
+
+import VueGeolocation from 'vue-browser-geolocation';
+Vue.use(VueGeolocation);
 
 Vue.component('apexchart', VueApexCharts);
 Vue.use(Vuetify, {
