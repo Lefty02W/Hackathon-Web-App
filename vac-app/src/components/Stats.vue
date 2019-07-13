@@ -142,7 +142,6 @@ export default {
 }
 </script>
 
-
 <!--
   Deaths caused by measles: https://ourworldindata.org/vaccination
   Rates in 5 year olds: https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/immunisation-coverage/national-and-dhb-immunisation-data
