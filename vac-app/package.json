@@ -11,8 +11,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "video.js": "^7.6.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vue-youtube-embed": "^2.2.1",
     "vuetify": "^1.5.16"
   },
   "devDependencies": {
