@@ -1,19 +1,47 @@
 <template>
   <div>
     <h1>Information Page</h1>
-    <div id = 'articles'>
-      <table>
-        <td>Articles</td>
-        <tr v-for="article in articles">
-          <a v-bind:href="article.link"> <td>{{article.text}}</td> </a>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <div>
-        <youtube :video-id="videoId"></youtube>
-      </div>
-    </div>
+
+    <v-container fluid grid-list-md id="mainContainer">
+      <v-layout row wrap>
+        <v-flex d-flex xs12 sm6 md4>
+          <v-card>
+            <div id = 'articles'>
+              <table>
+                <td>Articles</td>
+                <tr v-for="article in articles">
+                  <v-card>
+                    <a v-bind:href="article.link"> <td>{{article.text}}</td> </a>
+                  </v-card>
+                </tr>
+              </table>
+            </div>
+          </v-card>
+        </v-flex>
+        <v-flex d-flex xs12 sm6 md3>
+          <v-layout row wrap>
+            <v-flex d-flex>
+              <v-card>
+                <div>
+                  <div>
+                    <youtube :video-id="videoId"></youtube>
+                  </div>
+                </div>
+              </v-card>
+            </v-flex>
+
+
+            <v-flex>
+              <v-card>
+                <h1>Map goes here</h1>
+              </v-card>
+            </v-flex>
+          </v-layout>
+        </v-flex>
+      </v-layout>
+    </v-container>
+
+
   </div>
 </template>
 
