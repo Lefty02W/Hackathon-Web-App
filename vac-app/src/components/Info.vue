@@ -24,11 +24,20 @@ export default {
   data () {
     return {
       articles: [
-        {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
+        {text: 'Measles overseas and in New Zealand', link: 'https://www.immune.org.nz/hot-topic/measles-overseas-and-new-zealand'},
         {text: 'Debunking the anti-vaccination myths', link: 'https://www.medicalnewstoday.com/articles/325371.php'},
+        {text: 'Lower vaccination rates leave Northland people extremely exposed', link: 'https://www.rnz.co.nz/news/national/387447/lower-vaccination-rates-leave-northland-people-extremely-exposed'},
         {text: 'Six common misconceptions about immunization', link: 'https://www.who.int/vaccine_safety/initiative/detection/immunization_misconceptions/en/'},
-        {text: 'New Zealand medical professionals worried about anti-vax tour', link: 'https://www.rnz.co.nz/programmes/the-detail/story/2018692973/the-detail-the-anti-vaccination-conversation'},
-        {text: 'The Detail - The anti-vaccination conversation', link: 'https://www.rnz.co.nz/programmes/the-detail/story/2018692973/the-detail-the-anti-vaccination-conversation'}
+        {text: 'New Zealand medical professionals worried about anti-vax tour', link: 'https://www.newshub.co.nz/home/lifestyle/2019/03/new-zealand-medical-professionals-worried-about-anti-vax-tour.html'},
+        {text: 'The Detail - The anti-vaccination conversation', link: 'https://www.rnz.co.nz/programmes/the-detail/story/2018692973/the-detail-the-anti-vaccination-conversation'},
+        {text: 'Do Vaccines Cause Autism?', link: 'https://www.historyofvaccines.org/content/articles/do-vaccines-cause-autism'},
+        {text: 'MMR vaccine does not cause autism, even in those most at risk', link: 'https://www.medicalnewstoday.com/articles/324619.php'},
+        {text: 'Is There a Connection Between Vaccines and Autism?', link: 'https://kidshealth.org/en/parents/autism-studies.html'},
+        {text: 'VACCINE MYTHS DEBUNKED', link: 'https://www.publichealth.org/public-awareness/understanding-vaccines/vaccine-myths-debunked/'},
+        {text: 'Hospital bosses want anti anti-vax campaign', link: 'https://www.rnz.co.nz/news/national/384112/hospital-bosses-want-anti-anti-vax-campaign'},
+        {text: 'The anti-vaccination debate was built on a lie, why do people still believe it?', link: 'https://www.stuff.co.nz/national/health/110136209/the-antivaccination-debate-was-built-on-a-lie-why-do-people-still-believe-it'},
+        {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
+        {text: 'Ethical Issues and Vaccines', link: 'https://www.historyofvaccines.org/index.php/content/articles/ethical-issues-and-vaccines'}
       ],
       videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg')
     }
