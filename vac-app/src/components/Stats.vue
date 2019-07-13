@@ -13,6 +13,9 @@
         <v-flex md6>
           <apexchart width="790" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
         </v-flex>
+        <v-flex md6>
+          <apexchart type=pie width=790 :options="chartOptions" :series="seriesPie" />
+        </v-flex>
       </v-layout>
     </v-container>
   </div>
@@ -109,7 +112,23 @@ export default {
           name: "data",
           data: [700438, 635238, 547184, 328873, 178445, 95290]
         }
-      ]
+      ],
+      seriesPie: [95727, 86063, 482, 938],
+      chartOptions: {
+        labels: ['Total Children', 'Children Vaccinated with MMR', 'Diagnosed with Autism', 'Diagnosed with Autism And has older sibling with Autism'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+      }
+
     }
   }
 }
