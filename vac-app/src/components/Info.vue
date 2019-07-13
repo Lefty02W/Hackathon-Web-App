@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Infomation Page</h1>
+    <h1>Information Page</h1>
     <div id = 'articles'>
       <table>
         <td>Articles</td>
