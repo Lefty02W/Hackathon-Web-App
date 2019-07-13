@@ -43,11 +43,11 @@
               <v-card>
                 <div>
                   <div>
-                    <v-carousel>
+                    <v-carousel :cycle="false">
                       <v-carousel-item>
                         <youtube :video-id="videoId"></youtube>
                       </v-carousel-item>
-                      <v-carousel-item>
+                      <v-carousel-item >
                         <youtube :video-id="videoIdTwo"></youtube>
                       </v-carousel-item>
                       <v-carousel-item>
