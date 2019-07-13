@@ -9,6 +9,11 @@
           <apexchart width="790" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
         </v-flex>
       </v-layout>
+      <v-layout row>
+        <v-flex md6>
+          <apexchart width="790" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
+        </v-flex>
+      </v-layout>
     </v-container>
   </div>
 </template>
@@ -23,7 +28,7 @@ export default {
           id: '5YearOldChart'
         },
         title: {
-          text: "Vaccination Rates in 5 Year Olds By Ethnicity - 20182019"
+          text: "Vaccination Rates in 5 Year Olds By Ethnicity - 2018"
         },
         xaxis: {
           categories: ["Total", "NZ European", "Maori", "Pacific", "Asian", "Other"],
@@ -75,6 +80,34 @@ export default {
         {
           name: "Vaccinated",
           data: [43751, 46624, 49199, 45876, 46996, 52882, 54732, 55920, 55986, 55800]
+        }
+      ],
+      optionsLine: {
+        chart: {
+          id: 'lineChart'
+        },
+        title: {
+          text: "Deaths caused by Measles 1995 - 2017 (Worldwide) https://ourworldindata.org/vaccination"
+        },
+        xaxis: {
+          categories: [1990, 1995, 2000, 2005, 2010, 2017],
+          title: {
+            text: "Year"
+          }
+        },
+        yaxis: {
+          title: {
+            text: "N.O. of Deaths"
+          }
+        },
+        dataLabels: {
+          enabled: false
+        }
+      },
+      seriesLine: [
+        {
+          name: "data",
+          data: [700438, 635238, 547184, 328873, 178445, 95290]
         }
       ]
     }
