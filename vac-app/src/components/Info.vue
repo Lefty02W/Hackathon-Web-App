@@ -1,44 +1,39 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Information Page</h1>
 
     <v-container fluid grid-list-md id="mainContainer">
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
           <v-card>
+            <v-card-title primary-title>
+              <div class="headline">
+                <h3>Articles</h3>
+              </div>
+            </v-card-title>
             <div id='articles'>
               <v-card>
                 <v-container fluid grid-list-lg>
                   <v-layout row wrap>
                     <v-flex xs12 v-for="article in articles">
-                      <v-card>
-                        <v-layout>
-                          <v-flex xs2>
-                            <v-card-title>
-                              <i class="fas fa-newspaper"></i>
-                            </v-card-title>
-                          </v-flex>
-                          <v-flex xs11>
-                            <v-card-title>
-                              <div class="text-sm-left">
-                                <a v-bind:href="article.link">{{article.text}} </a>
-                              </div>
+                        <v-card hover v-bind:href="article.link">
+                          <v-card-title>
+                            <v-layout row wrap>
+                              <v-flex xs1>
+                                <i class="fas fa-newspaper"></i>
+                              </v-flex>
+                              <v-flex xs10>
+                                <div class="text-sm-left">
+                                  <p>{{article.text}}</p>
+                                </div>
+                              </v-flex>
+                            </v-layout>
                           </v-card-title>
-                          </v-flex>
-                        </v-layout>
-                      </v-card>
+                        </v-card>
                     </v-flex>
                   </v-layout>
                 </v-container>
-
               </v-card>
-
-<!--              <table>-->
-<!--                <td>Articles</td>-->
-<!--                <tr v-for="article in articles">-->
-
-<!--                </tr>-->
-<!--              </table>-->
             </div>
           </v-card>
         </v-flex>
@@ -48,12 +43,21 @@
               <v-card>
                 <div>
                   <div>
-                    <youtube :video-id="videoId"></youtube>
+                    <v-carousel :cycle="false">
+                      <v-carousel-item>
+                        <youtube :video-id="videoId"></youtube>
+                      </v-carousel-item>
+                      <v-carousel-item >
+                        <youtube :video-id="videoIdTwo"></youtube>
+                      </v-carousel-item>
+                      <v-carousel-item>
+                        <youtube :video-id="videoIdThree"></youtube>
+                      </v-carousel-item>
+                    </v-carousel>
                   </div>
                 </div>
               </v-card>
             </v-flex>
-
 
             <v-flex>
               <v-card>
@@ -64,8 +68,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-
-
   </div>
 </template>
 
@@ -91,7 +93,9 @@ export default {
         {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
         {text: 'Ethical Issues and Vaccines', link: 'https://www.historyofvaccines.org/index.php/content/articles/ethical-issues-and-vaccines'}
       ],
-      videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg')
+      videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg'),
+      videoIdTwo: getIdFromURL('https://www.youtube.com/watch?v=WQptarOLSBU'),
+      videoIdThree: getIdFromURL('https://www.youtube.com/watch?v=loL_iIWltI0')
     }
   }
 }
