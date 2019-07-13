@@ -44,7 +44,7 @@
               <v-card>
                 <div>
                   <div>
-                    <v-carousel :cycle="false">
+                    <v-carousel :cycle="false" hide-delimiters>
                       <v-carousel-item>
                         <youtube :video-id="videoId"></youtube>
                       </v-carousel-item>
