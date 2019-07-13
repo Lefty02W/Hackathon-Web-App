@@ -1,22 +1,21 @@
 <template>
   <div>
     <h1>Vaccination Statistics</h1>
-
     <v-container>
       <v-layout row>
         <v-flex md6>
-          <apexchart width="790" type="bar" :options="options" :series="series"></apexchart>
+          <apexchart width="790" height="375" type="bar" :options="options" :series="series"></apexchart>
         </v-flex>
         <v-flex md6>
-          <apexchart width="790" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
+          <apexchart width="790" height="375" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
         </v-flex>
       </v-layout>
       <v-layout row>
         <v-flex md6>
-          <apexchart width="790" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
+          <apexchart width="790" height="375" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
         </v-flex>
         <v-flex md6>
-          <apexchart type=pie width=790 :options="chartOptions" :series="seriesPie" />
+          <apexchart type=pie width=790 height="375" :options="chartOptions" :series="seriesPie" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -33,7 +32,7 @@ export default {
           id: '5YearOldChart'
         },
         title: {
-          text: "Vaccination Rates in 5 Year Olds By Ethnicity - 2018"
+          text: "New Zealand Vaccination Rates in 5 Year Olds By Ethnicity - 2018"
         },
         xaxis: {
           categories: ["Total", "NZ European", "Maori", "Pacific", "Asian", "Other"],
@@ -60,7 +59,7 @@ export default {
           id: 'areaChart'
         },
         title: {
-          text: "Vaccination Rates 2009 to 2018 in 5 Year Olds"
+          text: "New Zealand Vaccination Rates 2009 to 2018 in 5 Year Olds"
         },
         xaxis: {
           categories: [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
@@ -128,7 +127,14 @@ export default {
               position: 'bottom'
             }
           }
-        }]
+        }],
+        title: {
+          text: "Rates of Autism in Children caused by Vaccinations"
+        },
+        legend: {
+          position: 'bottom',
+          horizontalAlign: 'center'
+        }
       }
 
     }
