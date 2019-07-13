@@ -3,7 +3,7 @@
     <div id="NavBar">
     <v-toolbar>
       <v-toolbar-title>
-        Get the vacc don't be slacc
+        NZGSSM Vaccination Education
       </v-toolbar-title>
       <div class="spacer"></div>
       <v-toolbar-side-icon class="v-icon">

@@ -8,7 +8,7 @@
         </v-flex>
         <v-flex md6>
           <apexchart width="100%" height="375" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
-        </v-flex>
+      Information  </v-flex>
       </v-layout>
       <v-layout row>
         <v-flex md6>

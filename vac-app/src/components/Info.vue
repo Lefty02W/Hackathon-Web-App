@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="yeet">
-    <h1>Information Page</h1>
+    <h1>Vaccination Resources</h1>
 
     <v-container fluid grid-list-md id="mainContainer">
       <v-layout row wrap>
