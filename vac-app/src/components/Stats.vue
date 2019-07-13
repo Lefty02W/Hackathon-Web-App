@@ -91,7 +91,7 @@ export default {
           id: 'lineChart'
         },
         title: {
-          text: "Deaths caused by Measles 1995 - 2017 (Worldwide) https://ourworldindata.org/vaccination"
+          text: "Deaths caused by Measles 1995 - 2017 (Worldwide)"
         },
         xaxis: {
           categories: [1990, 1995, 2000, 2005, 2010, 2017],
@@ -141,3 +141,10 @@ export default {
   }
 }
 </script>
+
+
+<!--
+  Deaths caused by measles: https://ourworldindata.org/vaccination
+  Rates in 5 year olds: https://www.health.govt.nz/our-work/preventative-health-wellness/immunisation/immunisation-coverage/national-and-dhb-immunisation-data
+  Rates of autism caused by vaccinations:
+-->
