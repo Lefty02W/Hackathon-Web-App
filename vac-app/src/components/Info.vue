@@ -24,10 +24,11 @@ export default {
   data () {
     return {
       articles: [
-        {text: 'Article One', link: 'http://www.google.com'},
-        {text: 'Article Two', link: 'http://www.google.com'},
-        {text: 'Article Three', link: 'http://www.google.com'},
-        {text: 'Article Four', link: 'http://www.google.com'}
+        {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
+        {text: 'Debunking the anti-vaccination myths', link: 'https://www.medicalnewstoday.com/articles/325371.php'},
+        {text: 'Six common misconceptions about immunization', link: 'https://www.who.int/vaccine_safety/initiative/detection/immunization_misconceptions/en/'},
+        {text: 'New Zealand medical professionals worried about anti-vax tour', link: 'https://www.rnz.co.nz/programmes/the-detail/story/2018692973/the-detail-the-anti-vaccination-conversation'},
+        {text: 'The Detail - The anti-vaccination conversation', link: 'https://www.rnz.co.nz/programmes/the-detail/story/2018692973/the-detail-the-anti-vaccination-conversation'}
       ],
       videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg')
     }
