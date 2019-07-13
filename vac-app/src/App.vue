@@ -8,12 +8,12 @@
       <div class="spacer"></div>
       <router-link to="/statistics">
         <v-toolbar-side-icon class="v-icon">
-            <i class="fas fa-chart-area"></i>
+            <i id="navIcon" class="fas fa-chart-area"></i>
         </v-toolbar-side-icon>
       </router-link>
       <router-link to="/">
         <v-toolbar-side-icon>
-            <i class="fas fa-info-circle"></i>
+            <i id="navIcon" class="fas fa-info-circle"></i>
         </v-toolbar-side-icon>
       </router-link>
 
@@ -50,6 +50,9 @@ a {
 #nav{
   background: rgba(138, 7, 7, .8);
   color: white;
+}
+#navIcon {
+  color:white;
 }
 
 </style>
