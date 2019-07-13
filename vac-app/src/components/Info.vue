@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="yeet">
+  <v-container id="yeet">
     <h1>Vaccination Resources</h1>
 
     <v-container fluid grid-list-md id="mainContainer">
@@ -96,7 +96,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script>
