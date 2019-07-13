@@ -143,8 +143,3 @@ export default {
 }
 </script>
 
-<style>
-  #yeet {
-    background-color: blue;
-  }
-</style>
