@@ -6,11 +6,14 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 
+import VueApexCharts from 'vue-apexcharts'
+
+Vue.component('apexchart', VueApexCharts);
 Vue.use(Vuetify, {
   iconfont: 'fa'
 })
 
-Vue.config.productionTip = false
+
 
 /* eslint-disable no-new */
 new Vue({

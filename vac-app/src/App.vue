@@ -1,23 +1,23 @@
 <template>
   <div id="app">
     <div id="NavBar">
-      <v-toolbar>
-        <v-toolbar-title>
-          Get the vacc don't be slacc
-        </v-toolbar-title>
-        <div class="spacer"></div>
-        <v-toolbar-side-icon class="v-icon">
-          <router-link to="/statistics">
-            <i class="fas fa-chart-area"></i>
-          </router-link>
-        </v-toolbar-side-icon>
-        <v-toolbar-side-icon>
-          <router-link to="/">
-            <i class="fas fa-info-circle"></i>
-          </router-link>
-        </v-toolbar-side-icon>
-      </v-toolbar>
-    </div>
+    <v-toolbar>
+      <v-toolbar-title>
+        Get the vacc don't be slacc
+      </v-toolbar-title>
+      <div class="spacer"></div>
+      <v-toolbar-side-icon class="v-icon">
+        <router-link to="/statistics">
+          <i class="fas fa-chart-area"></i>
+        </router-link>
+      </v-toolbar-side-icon>
+      <v-toolbar-side-icon>
+        <router-link to="/">
+          <i class="fas fa-info-circle"></i>
+        </router-link>
+      </v-toolbar-side-icon>
+    </v-toolbar>
+  </div>
     <router-view/>
   </div>
 </template>
