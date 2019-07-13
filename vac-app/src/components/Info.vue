@@ -79,10 +79,10 @@
                           <v-flex xs12>
                             <v-card-title>
                               <div class="text-sm-left">
-                                <p>{{clinic.text}}</p>
-                                <p>{{clinic.address}}</p>
-                                <p>{{clinic.number}}</p>
-                                <p v-if="userLong !== 0 && userLat !== 0">{{getDistance(clinic.latitude,clinic.longitude)}} km</p>
+                                <p><i class="fas fa-stethoscope"></i> {{clinic.text}}</p>
+                                <p><i class="fas fa-map-marker-alt"></i> {{clinic.address}}</p>
+                                <p><i class="fas fa-phone"></i> {{clinic.number}}</p>
+                                <p v-if="userLong !== 0 && userLat !== 0"><i class="fas fa-ruler"></i> {{getDistance(clinic.latitude,clinic.longitude)}} km</p>
                               </div>
                             </v-card-title>
                           </v-flex>
