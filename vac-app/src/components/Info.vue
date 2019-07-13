@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="yeet">
     <h1>Information Page</h1>
 
     <v-container fluid grid-list-md id="mainContainer">
@@ -53,6 +53,9 @@
                       </v-carousel-item>
                       <v-carousel-item>
                         <youtube :video-id="videoIdThree"></youtube>
+                      </v-carousel-item>
+                      <v-carousel-item>
+                        <youtube :video-id="videoIdFour"></youtube>
                       </v-carousel-item>
                     </v-carousel>
                   </div>
@@ -118,9 +121,10 @@ export default {
         {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
         {text: 'Ethical Issues and Vaccines', link: 'https://www.historyofvaccines.org/index.php/content/articles/ethical-issues-and-vaccines'}
       ],
-      videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg'),
-      videoIdTwo: getIdFromURL('https://www.youtube.com/watch?v=WQptarOLSBU'),
-      videoIdThree: getIdFromURL('https://www.youtube.com/watch?v=loL_iIWltI0'),
+      videoId: getIdFromURL('https://www.youtube.com/watch?v=xZd58hFQ4V8'),
+      videoIdTwo: getIdFromURL('https://www.youtube.com/watch?v=sYCyP37ASsE'),
+      videoIdThree: getIdFromURL('https://youtu.be/Fcvgp6gNh6o'),
+      videoIdFour: getIdFromURL('https://youtu.be/rb7TVW77ZCs'),
 
       clinics: [
         {text: 'The Travel Doctor Christchurch', img:'https://lh5.googleusercontent.com/p/AF1QipOHTIQBe8MlnGFpvjoImJRgl2xN_9MkeEpzTBNS=w80-h92-p-k-no',
@@ -138,3 +142,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  #yeet {
+    background-color: blue;
+  }
+</style>
