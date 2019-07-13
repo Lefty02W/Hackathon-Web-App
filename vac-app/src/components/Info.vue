@@ -38,28 +38,24 @@
           </v-card>
         </v-flex>
 
-        <v-flex d-flex xs12 sm6 md7>
+        <v-flex d-flex xs12 sm6 md7 lg6>
           <v-layout row wrap>
             <v-flex d-flex>
               <v-card>
-                <div>
-                  <div>
-                    <v-carousel :cycle="false" hide-delimiters>
-                      <v-carousel-item>
-                        <youtube :video-id="videoId"></youtube>
-                      </v-carousel-item>
-                      <v-carousel-item >
-                        <youtube :video-id="videoIdTwo"></youtube>
-                      </v-carousel-item>
-                      <v-carousel-item>
-                        <youtube :video-id="videoIdThree"></youtube>
-                      </v-carousel-item>
-                      <v-carousel-item>
-                        <youtube :video-id="videoIdFour"></youtube>
-                      </v-carousel-item>
-                    </v-carousel>
-                  </div>
-                </div>
+                <v-carousel :cycle="false" hide-delimiters>
+                  <v-carousel-item>
+                    <youtube :video-id="videoId"></youtube>
+                  </v-carousel-item>
+                  <v-carousel-item fill-height>
+                    <youtube :video-id="videoIdTwo"></youtube>
+                  </v-carousel-item>
+                  <v-carousel-item>
+                    <youtube :video-id="videoIdThree"></youtube>
+                  </v-carousel-item>
+                  <v-carousel-item>
+                    <youtube :video-id="videoIdFour"></youtube>
+                  </v-carousel-item>
+                </v-carousel>
               </v-card>
             </v-flex>
 
