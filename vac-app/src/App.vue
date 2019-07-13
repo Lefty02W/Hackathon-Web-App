@@ -1,7 +1,23 @@
 <template>
   <div id="app">
-    <NavBar></NavBar>
-    <v-text>tjkhskjdhsf</v-text>
+    <div id="NavBar">
+    <v-toolbar>
+      <v-toolbar-title>
+        Get the vacc don't be slacc
+      </v-toolbar-title>
+      <div class="spacer"></div>
+      <v-toolbar-side-icon class="v-icon">
+        <router-link to="/statistics">
+          <i class="fas fa-chart-area"></i>
+        </router-link>
+      </v-toolbar-side-icon>
+      <v-toolbar-side-icon>
+        <router-link to="/">
+          <i class="fas fa-info-circle"></i>
+        </router-link>
+      </v-toolbar-side-icon>
+    </v-toolbar>
+  </div>
 
     <img src="./assets/logo.png">
     <router-view/>
@@ -9,11 +25,12 @@
 </template>
 
 <script>
-  import NavBar from './components/NavBar'
   export default {
   name: 'App',
-    comments: {NavBar}
+    comments: {},
 }
+
+
 
 </script>
 
@@ -24,6 +41,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>
