@@ -7,15 +7,14 @@
       </v-toolbar-title>
       <div class="spacer"></div>
       <router-link to="/statistics">
-      <v-toolbar-side-icon class="v-icon">
-          <i class="fas fa-chart-area"></i>
-      </v-toolbar-side-icon>
+        <v-toolbar-side-icon class="v-icon">
+            <i class="fas fa-chart-area"></i>
+        </v-toolbar-side-icon>
       </router-link>
       <router-link to="/">
-
-      <v-toolbar-side-icon>
-          <i class="fas fa-info-circle"></i>
-      </v-toolbar-side-icon>
+        <v-toolbar-side-icon>
+            <i class="fas fa-info-circle"></i>
+        </v-toolbar-side-icon>
       </router-link>
 
     </v-toolbar>
@@ -42,5 +41,9 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
