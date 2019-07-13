@@ -4,7 +4,7 @@
 
     <v-container fluid grid-list-md id="mainContainer">
       <v-layout row wrap>
-        <v-flex d-flex xs12 sm6 md4>
+        <v-flex d-flex xs12 sm6 md5>
           <v-card>
             <v-card-title primary-title>
               <div class="headline">
@@ -37,7 +37,8 @@
             </div>
           </v-card>
         </v-flex>
-        <v-flex d-flex xs12 sm6 md3>
+
+        <v-flex d-flex xs12 sm6 md7>
           <v-layout row wrap>
             <v-flex d-flex>
               <v-card>
