@@ -4,18 +4,18 @@
     <v-container>
       <v-layout row>
         <v-flex md6>
-          <apexchart width="790" height="375" type="bar" :options="options" :series="series"></apexchart>
+          <apexchart width="100%" height="375" type="bar" :options="options" :series="series"></apexchart>
         </v-flex>
         <v-flex md6>
-          <apexchart width="790" height="375" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
+          <apexchart width="100%" height="375" type="area" :options="optionsArea" :series="seriesArea"></apexchart>
         </v-flex>
       </v-layout>
       <v-layout row>
         <v-flex md6>
-          <apexchart width="790" height="375" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
+          <apexchart width="100%" height="375" type="line" :options="optionsLine" :series="seriesLine"></apexchart>
         </v-flex>
         <v-flex md6>
-          <apexchart type=pie width=790 height="375" :options="chartOptions" :series="seriesPie" />
+          <apexchart type=pie width=100% height="375" :options="chartOptions" :series="seriesPie" />
         </v-flex>
       </v-layout>
     </v-container>
