@@ -6,16 +6,18 @@
         NZGSSM Vaccination Education
       </v-toolbar-title>
       <div class="spacer"></div>
+      <router-link to="/statistics">
       <v-toolbar-side-icon class="v-icon">
-        <router-link to="/statistics">
           <i class="fas fa-chart-area"></i>
-        </router-link>
       </v-toolbar-side-icon>
+      </router-link>
+      <router-link to="/">
+
       <v-toolbar-side-icon>
-        <router-link to="/">
           <i class="fas fa-info-circle"></i>
-        </router-link>
       </v-toolbar-side-icon>
+      </router-link>
+
     </v-toolbar>
   </div>
     <router-view/>
