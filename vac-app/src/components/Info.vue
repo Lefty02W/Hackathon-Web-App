@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Information Page</h1>
 
     <v-container fluid grid-list-md id="mainContainer">
