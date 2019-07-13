@@ -6,39 +6,34 @@
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
           <v-card>
+            <v-card-title primary-title>
+              <div class="headline">
+                <h3>Articles</h3>
+              </div>
+            </v-card-title>
             <div id='articles'>
               <v-card>
                 <v-container fluid grid-list-lg>
                   <v-layout row wrap>
                     <v-flex xs12 v-for="article in articles">
-                      <v-card>
-                        <v-layout>
-                          <v-flex xs2>
-                            <v-card-title>
-                              <i class="fas fa-newspaper"></i>
-                            </v-card-title>
-                          </v-flex>
-                          <v-flex xs11>
-                            <v-card-title>
-                              <div class="text-sm-left">
-                                <a v-bind:href="article.link">{{article.text}} </a>
-                              </div>
+                        <v-card hover v-bind:href="article.link">
+                          <v-card-title>
+                            <v-layout row wrap>
+                              <v-flex xs1>
+                                <i class="fas fa-newspaper"></i>
+                              </v-flex>
+                              <v-flex xs10>
+                                <div class="text-sm-left">
+                                  <p>{{article.text}}</p>
+                                </div>
+                              </v-flex>
+                            </v-layout>
                           </v-card-title>
-                          </v-flex>
-                        </v-layout>
-                      </v-card>
+                        </v-card>
                     </v-flex>
                   </v-layout>
                 </v-container>
-
               </v-card>
-
-<!--              <table>-->
-<!--                <td>Articles</td>-->
-<!--                <tr v-for="article in articles">-->
-
-<!--                </tr>-->
-<!--              </table>-->
             </div>
           </v-card>
         </v-flex>
@@ -54,7 +49,6 @@
               </v-card>
             </v-flex>
 
-
             <v-flex>
               <v-card>
                 <h1>Map goes here</h1>
@@ -64,8 +58,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-
-
   </div>
 </template>
 
