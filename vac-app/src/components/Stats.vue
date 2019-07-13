@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Vaccination Statistics</h1>
+  <div class="container">
+      <h1>Vaccination Statistics</h1>
     <v-container>
       <v-layout row>
         <v-flex md6>
