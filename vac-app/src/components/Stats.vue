@@ -23,7 +23,7 @@ export default {
           id: '5YearOldChart'
         },
         title: {
-          text: "Vaccination Rates in 5 Year Olds By Ethnicity - 2018"
+          text: "Vaccination Rates in 5 Year Olds By Ethnicity - 20182019"
         },
         xaxis: {
           categories: ["Total", "NZ European", "Maori", "Pacific", "Asian", "Other"],
