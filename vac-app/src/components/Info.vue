@@ -6,15 +6,39 @@
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
           <v-card>
-            <div id = 'articles'>
-              <table>
-                <td>Articles</td>
-                <tr v-for="article in articles">
-                  <v-card>
-                    <a v-bind:href="article.link"> <td>{{article.text}}</td> </a>
-                  </v-card>
-                </tr>
-              </table>
+            <div id='articles'>
+              <v-card>
+                <v-container fluid grid-list-lg>
+                  <v-layout row wrap>
+                    <v-flex xs12 v-for="article in articles">
+                      <v-card>
+                        <v-layout>
+                          <v-flex xs2>
+                            <v-card-title>
+                              <i class="fas fa-newspaper"></i>
+                            </v-card-title>
+                          </v-flex>
+                          <v-flex xs11>
+                            <v-card-title>
+                              <div class="text-sm-left">
+                                <a v-bind:href="article.link">{{article.text}} </a>
+                              </div>
+                          </v-card-title>
+                          </v-flex>
+                        </v-layout>
+                      </v-card>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
+
+              </v-card>
+
+<!--              <table>-->
+<!--                <td>Articles</td>-->
+<!--                <tr v-for="article in articles">-->
+
+<!--                </tr>-->
+<!--              </table>-->
             </div>
           </v-card>
         </v-flex>
