@@ -61,7 +61,31 @@
 
             <v-flex>
               <v-card>
-                <h1>Map goes here</h1>
+                <h1>Vaccinations In Christchurch</h1>
+                <v-container fluid grid-list-lg>
+                  <v-layout row wrap>
+                    <v-flex xs12 v-for="clinic in clinics">
+                      <v-card hover>
+                        <v-layout>
+                          <v-flex xs2>
+                            <v-card-title>
+                              <img v-bind:src="clinic.img">
+                            </v-card-title>
+                          </v-flex>
+                          <v-flex xs12>
+                            <v-card-title>
+                              <div class="text-sm-left">
+                                <p>{{clinic.text}}</p>
+                                <p>{{clinic.address}}</p>
+                                <p>{{clinic.number}}</p>
+                              </div>
+                            </v-card-title>
+                          </v-flex>
+                        </v-layout>
+                      </v-card>
+                    </v-flex>
+                  </v-layout>
+                </v-container>
               </v-card>
             </v-flex>
           </v-layout>
@@ -95,7 +119,20 @@ export default {
       ],
       videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg'),
       videoIdTwo: getIdFromURL('https://www.youtube.com/watch?v=WQptarOLSBU'),
-      videoIdThree: getIdFromURL('https://www.youtube.com/watch?v=loL_iIWltI0')
+      videoIdThree: getIdFromURL('https://www.youtube.com/watch?v=loL_iIWltI0'),
+
+      clinics: [
+        {text: 'The Travel Doctor Christchurch', img:'https://lh5.googleusercontent.com/p/AF1QipOHTIQBe8MlnGFpvjoImJRgl2xN_9MkeEpzTBNS=w80-h92-p-k-no',
+          address: '426 Barbadoes St, Edgeware', number: '03-365 1003'},
+        {text: 'Moorhouse Medical Centre', img:'https://lh5.googleusercontent.com/p/AF1QipOQfJhcVTVMoB5iR36n5fokbvZ-ojohEUdTPFyj=w80-h92-p-k-no',
+          address: '3 Pilgrim Pl, Sydenham', number: '03-365 7900'},
+        {text: 'Doctors On Riccarton', img:'https://lh5.googleusercontent.com/proxy/Q--0bA7lfxAffOITriIBAyCS8ARjIlpy6iFkdo6YSvjjMjCp3nGwK49ZMt-UypMJoTkiLI_nnf8WsXPXlTSazshPfWV04mq1J_qpbC5_AMx45RHu0GscUuK47JbTwLuVWRwiHz7jvV9_QM1TtfpGHddsUBB3yA=w80-h92-p-k-no',
+          address: '183 Riccarton Rd, Riccarton', number: '03-348 8989'},
+        {text: 'Merivale Medical Practice', img:'https://lh5.googleusercontent.com/p/AF1QipPvtDOoRidAZ8HeGp77vjakGoYth3GEOCRdFUQI=w80-h92-p-k-no',
+          address: '236 Papanui Rd, Merivale', number: '03-355 7262'},
+        {text: 'Maxwell Health Flu Vaccinations', img:'https://lh5.googleusercontent.com/p/AF1QipOm_7lh02Rj7NG0yNE7cu9mYzR7I8tysY5EVLTA=w80-h92-p-k-no',
+          address: '80 Ivory St, Rangiora', number: '0800 376 600'},
+      ]
     }
   }
 }
