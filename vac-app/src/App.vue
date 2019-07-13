@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="NavBar">
-    <v-toolbar>
-      <v-toolbar-title>
+    <v-toolbar id="nav">
+      <v-toolbar-title >
         NZGSSM Vaccination Education
       </v-toolbar-title>
       <div class="spacer"></div>
@@ -46,4 +46,10 @@
 a {
   text-decoration: none;
 }
+
+#nav{
+  background: rgba(138, 7, 7, .8);
+  color: white;
+}
+
 </style>
