@@ -43,7 +43,17 @@
               <v-card>
                 <div>
                   <div>
-                    <youtube :video-id="videoId"></youtube>
+                    <v-carousel>
+                      <v-carousel-item>
+                        <youtube :video-id="videoId"></youtube>
+                      </v-carousel-item>
+                      <v-carousel-item>
+                        <youtube :video-id="videoIdTwo"></youtube>
+                      </v-carousel-item>
+                      <v-carousel-item>
+                        <youtube :video-id="videoIdThree"></youtube>
+                      </v-carousel-item>
+                    </v-carousel>
                   </div>
                 </div>
               </v-card>
@@ -83,7 +93,9 @@ export default {
         {text: 'Vaccine safety', link: 'https://www.health.govt.nz/your-health/healthy-living/immunisation/vaccine-safety'},
         {text: 'Ethical Issues and Vaccines', link: 'https://www.historyofvaccines.org/index.php/content/articles/ethical-issues-and-vaccines'}
       ],
-      videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg')
+      videoId: getIdFromURL('https://www.youtube.com/watch?v=lCDCOckaTTg'),
+      videoIdTwo: getIdFromURL('https://www.youtube.com/watch?v=WQptarOLSBU'),
+      videoIdThree: getIdFromURL('https://www.youtube.com/watch?v=loL_iIWltI0')
     }
   }
 }
